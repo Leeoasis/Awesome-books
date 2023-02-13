@@ -1,3 +1,5 @@
+/* eslint-disable max-classes-per-file */
+
 // Book Function
 function Book(title, author) {
   this.title = title;
@@ -93,3 +95,5 @@ document.querySelector('#book-collection').addEventListener('click', (e) => {
   // Remove book from Store
   Storage.removeBook(e.target.previousElementSibling.previousElementSibling.textContent);
 });
+
+/* eslint-disable max-classes-per-file */
