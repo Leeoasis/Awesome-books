@@ -28,3 +28,36 @@
 	margin: 5px;
 	font-weight: 700;
 }
+
+#book-collection > div:nth-child(odd) {
+	background: #cfcfcf;
+}
+
+.forms-section h2 {
+	text-align: center;
+	padding-top: 6%;
+}
+
+.text-input {
+	display: flex;
+	flex-direction: column;
+}
+
+#title,
+#author {
+	width: 70%;
+	align-self: center;
+	border: 2px rgb(83, 81, 81) solid;
+	padding: 5px;
+}
+
+span{
+	margin-right: 20px;
+}
+
+.addbtn {
+	border: 2px rgb(83, 81, 81) solid;
+	padding: 5px;
+	width: 10%;
+	margin-left: 75%;
+}
