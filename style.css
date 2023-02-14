@@ -1,4 +1,63 @@
-body {
-  max-width: 500px;
-  margin: auto;
+* {
+  box-sizing: border-box;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: rgb(83, 81, 81);
+}
+
+.books {
+  text-align: center;
+}
+
+#book-collection {
+  display: flex;
+  flex-direction: column;
+  border: 2px rgb(83, 81, 81) solid;
+  margin: 10px 10px;
+  padding: 5px 0% 10px;
+}
+
+#book-collection p {
+  font-weight: 700;
+  float: left;
+  margin: 5px 5px;
+  padding-right: 10px;
+}
+
+.delete {
+  float: right;
+  margin: 5px;
+  font-weight: 700;
+}
+
+#book-collection > div:nth-child(odd) {
+  background: #cfcfcf;
+}
+
+.forms-section h2 {
+  text-align: center;
+  padding-top: 6%;
+}
+
+.text-input {
+  display: flex;
+  flex-direction: column;
+}
+
+#title,
+#author {
+  width: 70%;
+  align-self: center;
+  border: 2px rgb(83, 81, 81) solid;
+  padding: 5px;
+}
+
+span {
+  margin-right: 20px;
+}
+
+.addbtn {
+  border: 2px rgb(83, 81, 81) solid;
+  padding: 5px;
+  width: 10%;
+  margin-left: 75%;
 }

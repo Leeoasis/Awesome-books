@@ -1,13 +1,15 @@
 /* eslint-disable max-classes-per-file */
 
 // Book Function
-function Book(title, author) {
-  this.title = title;
-  this.author = author;
+class Book {
+  constructor(title, author) {
+    this.title = title;
+    this.author = author;
+  }
 }
 
 // Store Class: Handles local storage of books
-class Storage {/* eslint-disable max-classes-per-file */
+class Storage {
   // Receives Books
   static getBooks() {
     let books;
@@ -44,7 +46,7 @@ class Storage {/* eslint-disable max-classes-per-file */
 
 // UI Class: Displays listed Books
 
-class UI {/* eslint-disable max-classes-per-file */
+class UI {
   static displayBooks() {
     const books = Storage.getBooks();
     books.forEach((book) => UI.addBookToList(book));
@@ -54,11 +56,10 @@ class UI {/* eslint-disable max-classes-per-file */
     const list = document.querySelector('#book-collection');
     const addedbook = document.createElement('div');
     addedbook.innerHTML = `
-          <p>${book.title}</p>
-          <p>${book.author}</p>
-          <button type="submit" class="delete">Remove</button>
-          <hr>
-        `;
+     <p>${book.title}</p>
+     <p><span>by</span>${book.author}</p>
+     <button type="submit" class="delete">Remove</button>
+     `;
     list.appendChild(addedbook);
   }
 
@@ -93,7 +94,9 @@ document.querySelector('#book-collection').addEventListener('click', (e) => {
   UI.deleteBook(e.target);
 
   // Remove book from Store
-  Storage.removeBook(e.target.previousElementSibling.previousElementSibling.textContent);
+  Storage.removeBook(
+    e.target.previousElementSibling.previousElementSibling.textContent,
+  );
 });
 
 /* eslint-disable max-classes-per-file */
