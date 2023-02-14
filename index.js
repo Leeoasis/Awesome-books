@@ -10,7 +10,6 @@ class Book {
 
 // Store Class: Handles local storage of books
 class Storage {
-  /* eslint-disable max-classes-per-file */
   // Receives Books
   static getBooks() {
     let books;
@@ -48,7 +47,6 @@ class Storage {
 // UI Class: Displays listed Books
 
 class UI {
-  /* eslint-disable max-classes-per-file */
   static displayBooks() {
     const books = Storage.getBooks();
     books.forEach((book) => UI.addBookToList(book));
