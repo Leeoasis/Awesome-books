@@ -99,55 +99,51 @@ document.querySelector('#book-collection').addEventListener('click', (e) => {
   );
 });
 
-
 // Get target varilables
-const bookCollection = document.querySelector("#book-collection");
-const addBook = document.querySelector("#add-books");
-const addContact = document.querySelector(".contact-display");
-const mainTitle = document.querySelector(".books")
-
+const bookCollection = document.querySelector('#book-collection');
+const addBook = document.querySelector('#add-books');
+const addContact = document.querySelector('.contact-display');
+const mainTitle = document.querySelector('.books');
 
 // Displaying booklist page
-const list = document.querySelector("#list");
-list.addEventListener("click", () => {
-  bookCollection.style.display = "flex"
-  addBook.classList.add("hidden") ;
-  addContact.classList.add("hidden");
-  mainTitle.style.display = "block"
-})
+const list = document.querySelector('#list');
+list.addEventListener('click', () => {
+  bookCollection.style.display = 'flex';
+  addBook.classList.add('hidden');
+  addContact.classList.add('hidden');
+  mainTitle.style.display = 'block';
+});
 
-window.addEventListener("load", () => {
-  addBook.classList.add("hidden") ;
-  mainTitle.style.display = "block"
-  addContact.classList.add("hidden");
+window.addEventListener('load', () => {
+  addBook.classList.add('hidden');
+  mainTitle.style.display = 'block';
+  addContact.classList.add('hidden');
 });
 
 // Displaying Add Book page
-const addNewBook = document.querySelector("#add-link");
-addNewBook.addEventListener("click", () => {
-  bookCollection.style.display = "none";
-  addBook.classList.remove("hidden") ;
-  addContact.classList.add("hidden");
-  mainTitle.style.display = "none";
+const addNewBook = document.querySelector('#add-link');
+addNewBook.addEventListener('click', () => {
+  bookCollection.style.display = 'none';
+  addBook.classList.remove('hidden');
+  addContact.classList.add('hidden');
+  mainTitle.style.display = 'none';
 });
 
 // Displaying Contact page
-const addNewContact = document.querySelector("#contacts");
-addNewContact.addEventListener("click", () => {
-  bookCollection.style.display = "none";
-  addBook.classList.add("hidden") ;
-  addContact.classList.remove("hidden");
-  mainTitle.style.display = "none";
+const addNewContact = document.querySelector('#contacts');
+addNewContact.addEventListener('click', () => {
+  bookCollection.style.display = 'none';
+  addBook.classList.add('hidden');
+  addContact.classList.remove('hidden');
+  mainTitle.style.display = 'none';
 });
-
 
 // Displaying booklist page
-const addNewBtn = document.querySelector(".addbtn");
-addNewBtn.addEventListener("click", () => {
-  bookCollection.style.display = "flex";
-  addBook.classList.add("hidden") ;
-  addContact.classList.add("hidden");
+const addNewBtn = document.querySelector('.addbtn');
+addNewBtn.addEventListener('click', () => {
+  bookCollection.style.display = 'flex';
+  addBook.classList.add('hidden');
+  addContact.classList.add('hidden');
 });
-
 
 /* eslint-disable max-classes-per-file */

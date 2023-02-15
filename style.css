@@ -43,6 +43,13 @@
   text-align: center;
 }
 
+.footer-section p {
+  border: 2px solid;
+  padding: 25px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
 #book-collection {
   display: flex;
   flex-direction: column;
@@ -99,13 +106,13 @@ span {
 
 /* Contact Section */
 
-.contact-display{
+.contact-display {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 3% auto;
   font-size: 18px;
-  line-height: 24px;;
+  line-height: 24px;
 }
 
 .contact-section h2 {
@@ -116,13 +123,6 @@ span {
 /* Footer Section */
 .footer-section {
   margin-top: 20%;
-}
-
-.footer-section p{
-  border: 2px solid;
-  padding: 25px;
-  font-size: 18px;
-  font-weight: 600;
 }
 
 .hidden {
