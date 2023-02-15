@@ -1,7 +1,7 @@
 {
   "name": "awesome-books-1",
   "version": "1.0.0",
-  "description": "",
+  "description": "- [📖 About the Project](#Awesome books)\r   - [🛠 Built With](#built-with)\r     - [Tech Stack](#html-css)\r     - [Key Features](#home-page)\r   - [🚀 Live Demo](#live-demo)\r - [💻 Getting Started](#getting-started)\r   - [Setup](#setup)\r   - [Prerequisites](#prerequisites)\r   - [Run tests](#run-tests)\r   - [Deployment](#triangular_flag_on_post-deployment)\r - [👥 Authors](#Leslie_Gudo)\r - [🔭 Future Features](#the other pages)\r - [🤝 Contributing](#contributing)\r - [⭐️ Show your support](#support)\r - [🙏 Acknowledgements](#microverse)\r - [❓ FAQ (OPTIONAL)](#faq)\r - [📝 License](#license)",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

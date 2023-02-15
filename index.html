@@ -1,50 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<title>Awesome book list</title>
-		<link rel="stylesheet" href="style.css" />
-	</head>
-	<body>
-		<h1 class="books">Awesome books</h1>
 
-		<!--Dynamic Book Display-->
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<title>Awesome book list</title>
+	<link rel="stylesheet" href="style.css" />
+</head>
 
-		<div id="book-collection">
-			<!-- Dynamic content from JS -->
-		</div>
+<body>
+	<div class="nav-bar">
+		<h1>Awesome Books</h1>
+		<ul class="nav-ul">
+			<li id="list"><a class="switch-link" href="#">List</a></li>
+			<li id="add-link"><a class="switch-link" href="#">Add new</a></li>
+			<li id="contacts"><a class="switch-link" href="#">Contact</a></li>
+		</ul>
+	</div>
+	<div class="date">
+		<p>March 19th 2021,<span>9:25:32 am</span></p>
+	</div>
+	<h1 class="books">Awesome books</h1>
 
-		<!-- Form Section -->
-		<div class="forms-section" id="add-books">
-			<h2>Add a new book</h2>
-			<form id="form">
-				<div class="text-input">
-					<input
-						type="text"
-						id="title"
-						name="title" 
-						placeholder="Title"
-						required
-					/>
-				</div>
-				<br />
+	<!--Dynamic Book Display-->
 
-				<div class="text-input">
-					<input
-						type="text"
-						id="author"
-						name="author"
-						placeholder="Author"
-						required
-					/>
-				</div>
-				<br />
-				<button type="submit" class="addbtn">Add</button>
-			</form>
-		</div>
-		<script src="index.js"></script>
-		<script src="ui.js"></script>
-		<script src="storage.js"></script>
-	</body>
+	<div id="book-collection">
+		<!-- Dynamic content from JS -->
+	</div>
+
+	<!-- Form Section -->
+	<div class="forms-section" id="add-books">
+		<h2>Add a new book</h2>
+		<form id="form">
+			<div class="text-input">
+				<input type="text" id="title" name="title" placeholder="Title" required />
+			</div>
+			<br />
+
+			<div class="text-input">
+				<input type="text" id="author" name="author" placeholder="Author" required />
+			</div>
+			<br />
+			<button type="submit" class="addbtn">Add</button>
+		</form>
+	</div>
+	<script src="index.js"></script>
+	<script src="ui.js"></script>
+	<script src="storage.js"></script>
+</body>
+
 </html>

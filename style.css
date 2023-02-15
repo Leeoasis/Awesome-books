@@ -4,6 +4,41 @@
   color: rgb(83, 81, 81);
 }
 
+.nav-bar {
+  display: flex;
+  margin: 5px 10px;
+  justify-content: space-between;
+  border: 2px rgb(83, 81, 81) solid;
+  padding: 0% 10px;
+}
+
+.nav-bar h1 {
+  font-size: 26px;
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+.nav-ul {
+  display: flex;
+  list-style-type: none;
+  gap: 20px;
+}
+
+#list,
+#add-link {
+  border-right: 2px rgb(83, 81, 81) solid;
+  padding-right: 10px;
+}
+
+.nav-bar ul li a {
+  text-decoration: none;
+}
+
+.date {
+  display: flex;
+  justify-content: end;
+}
+
 .books {
   text-align: center;
 }
