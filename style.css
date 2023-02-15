@@ -96,3 +96,35 @@ span {
   width: 10%;
   margin-left: 75%;
 }
+
+/* Contact Section */
+
+.contact-display{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 3% auto;
+  font-size: 18px;
+  line-height: 24px;;
+}
+
+.contact-section h2 {
+  padding-bottom: 15px;
+}
+
+
+/* Footer Section */
+.footer-section {
+  margin-top: 20%;
+}
+
+.footer-section p{
+  border: 2px solid;
+  padding: 25px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.hidden {
+  display: none;
+}
