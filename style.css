@@ -4,8 +4,50 @@
   color: rgb(83, 81, 81);
 }
 
+.nav-bar {
+  display: flex;
+  margin: 5px 10px;
+  justify-content: space-between;
+  border: 2px rgb(83, 81, 81) solid;
+  padding: 0% 10px;
+}
+
+.nav-bar h1 {
+  font-size: 26px;
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+.nav-ul {
+  display: flex;
+  list-style-type: none;
+  gap: 20px;
+}
+
+#list,
+#add-link {
+  border-right: 2px rgb(83, 81, 81) solid;
+  padding-right: 10px;
+}
+
+.nav-bar ul li a {
+  text-decoration: none;
+}
+
+.date {
+  display: flex;
+  justify-content: end;
+}
+
 .books {
   text-align: center;
+}
+
+.footer-section p {
+  border: 2px solid;
+  padding: 25px;
+  font-size: 18px;
+  font-weight: 600;
 }
 
 #book-collection {
@@ -60,4 +102,28 @@ span {
   padding: 5px;
   width: 10%;
   margin-left: 75%;
+}
+
+/* Contact Section */
+
+.contact-display {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 3% auto;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.contact-section h2 {
+  padding-bottom: 15px;
+}
+
+/* Footer Section */
+.footer-section {
+  margin-top: 20%;
+}
+
+.hidden {
+  display: none;
 }
